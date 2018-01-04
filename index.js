@@ -3,7 +3,14 @@ AWS.config.update({region: 'eu-west-1'});
 
 const sqs = new AWS.SQS();
 const sqsBaseUrl = process.env.SQS_BASE_URL;
-const queueName = process.env.SQS_QUEUE_NAME;
+
+const herokuAppName = process.env.HEROKU_APP_NAME;
+const baseQueueName = process.env.SQS_QUEUE_NAME;
+
+let queueName = baseQueueName;
+if (herokuAppName) {
+    queueName = `${queueName}-${herokuAppName}`;
+}
 
 const queueUrl = `${sqsBaseUrl}/${queueName}`;
 
