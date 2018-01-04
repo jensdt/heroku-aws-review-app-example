@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jensdt/heroku-aws-review-app-example#readme",
   "dependencies": {
     "aws-sdk": "^2.176.0"
+  },
+  "engines": {
+    "node": "9.3.0"
   }
 }
