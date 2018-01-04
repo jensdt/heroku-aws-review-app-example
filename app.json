@@ -10,6 +10,12 @@
     "AWS_SECRET_ACCESS_KEY": {
       "required": true
     },
+    "CF_AWS_ACCESS_KEY_ID": {
+      "required": true
+    },
+    "CF_AWS_SECRET_ACCESS_KEY": {
+      "required": true
+    },
     "SQS_BASE_URL": {
       "required": true
     },
