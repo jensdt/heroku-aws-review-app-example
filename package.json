@@ -1,0 +1,22 @@
+{
+  "name": "heroku-aws-review-app-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensdt/heroku-aws-review-app-example.git"
+  },
+  "author": "Jens De Temmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jensdt/heroku-aws-review-app-example/issues"
+  },
+  "homepage": "https://github.com/jensdt/heroku-aws-review-app-example#readme",
+  "dependencies": {
+    "aws-sdk": "^2.176.0"
+  }
+}
