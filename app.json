@@ -1,0 +1,35 @@
+{
+  "name": "heroku-aws-review-app-example",
+  "scripts": {
+  },
+  "env": {
+    "AWS_ACCESS_KEY_ID": {
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "required": true
+    },
+    "SQS_BASE_URL": {
+      "required": true
+    },
+    "SQS_QUEUE_NAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "sqsWorker": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
