@@ -22,7 +22,7 @@ const receiveParams = {
 function postMessage() {
     sqs.sendMessage({
         QueueUrl: queueUrl,
-        MessageBody: `This is a test message sent at ${new Date()}`
+        MessageBody: `This is a new test message sent at ${new Date()}`
     }, logError)
 }
 
