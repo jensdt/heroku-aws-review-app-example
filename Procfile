@@ -1,0 +1,1 @@
+sqsWorker: node index.js
