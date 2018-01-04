@@ -1,6 +1,7 @@
 {
   "name": "heroku-aws-review-app-example",
   "scripts": {
+    "postdeploy": "node postdeploy.js"
   },
   "env": {
     "AWS_ACCESS_KEY_ID": {
